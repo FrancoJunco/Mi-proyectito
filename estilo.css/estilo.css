@@ -159,3 +159,30 @@ aside{
     width: 40%;
     height: 40%;
 }
+.caja{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background-color: pink;
+    animation-name: hola;
+    animation-duration: 5s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes hola {
+    0% {
+        left: 0;
+        background: #025;
+
+    }
+    50%{
+        background: red;
+
+    }
+    100%{
+        left: 80%;
+        background: green;
+
+    }
+}
