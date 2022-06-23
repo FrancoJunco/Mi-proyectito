@@ -6,7 +6,15 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 * {
   padding: 0;
@@ -166,9 +174,4 @@ aside {
 .imglogo {
   height: 10%;
   width: 10%;
-}
-
-.whatsapp{
-  height: 20%;
-  width: 20%;
-}
+} 

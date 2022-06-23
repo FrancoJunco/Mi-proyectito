@@ -1,7 +1,11 @@
 /*estilos generales*/
 /*smartphone*/
+  @import "./base/generals";
+  @import "./base/reset";
+  @import "./layourts/header";
   @import "generales";
-
+  @import "./utilities/utilities";
+  
 .envios{
     background-color: rgb(255, 255, 255);
 }
@@ -185,7 +189,4 @@ aside{
     text-align: center;
 }
 
-.imglogo{
-    height: 10%;
-    width: 10%;
-}
+
