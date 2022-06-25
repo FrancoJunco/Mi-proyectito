@@ -11,109 +11,67 @@
     <title>Contacto</title>
     <style>
         body{
-            background:  url(../img/more-leaves.png);
-        }
+        background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%); background-blend-mode: normal, normal, screen, overlay, normal;
+      }
 
     </style>
      
 </head>
-<body>   
-  <header>
+<body>
+  <header class="bg-p">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <img src="../img/logolocal2.png" alt="" class="imglogo">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">Home</a>
+        <a href="../index.html"><img src="../img/logolocal2.png" alt="logo" class="imglogo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
-            <a class="nav-link active" href="./novedades.html">Novedades</a>
-            <a class="nav-link active" href="./productos.html">Productos</a>
-            <a class="nav-link active" href="./nosotros.html">Nosotros</a>
-          </div>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-3">
+          <a class="nav-link active" href="../index.html">Inicio</a>
+          <a class="nav-link active" aria-current="page" href="../secciones/contacto.html">Contacto</a>
+          <a class="nav-link active" href="../secciones/novedades.html">Novedades</a>
+          <a class="nav-link active" href="../secciones/productos.html">Productos</a>
+          <a class="nav-link active" href="../secciones/nosotros.html">Nosotros</a>
         </div>
       </div>
     </nav>
+  </header> 
   
-       
-
-  </header>
-
-  <main>  
-
-      <section>
-
-          <div>
-            <h2>Contactanos</h2>
-            <h3>Su consulta no molesta</h3>
-            
-            <p>Av. Los Granaderos 2644</p>
-                 
-
-          </div>
-
-              <div>
-                <section id="gps" class="border2 productosFlex2">   
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1432.2345003071848!2d-64.21590029745144!3d-31.374215051587306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329902ee6d820f%3A0x9a2f5c02cc78b50d!2sBonita%20nails%20indumentaria%20femenina!5e0!3m2!1ses!2sar!4v1651270957520!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  
-                      <form class="form">
-                          <label for="nombre_apellido">Ingrese Nombre y Apellido</label>
-                         <input type="text" name="nombre_apellido"/> <br>
-                         <label for="email">Ingrese Email</label>
-                         <input type="text" name="email"/> <br>
-                         <label for="observaciones">Mensaje (Opcional)</label>
-                         <textarea name="observaciones"></textarea>
-                         <br>
-                  
-
-              </div>
-
-      </section>
-
-      <section>
-
-        <input type="submit" value="Enviar info"/>
-        <input type="reset" value="Borrar info"/>
-         <br>
-
-      </section>
-
-      <section>
-        <select name="talles" id="">
-            
-          <option value="L">L</option>
-          <option value="M">M</option>
-          <option value="S">S</option> 
-
-      </select>
-      <div>Acepta términos y condiciones</div>
-      <input type="checkbox" name="acepta" value="1">
-     </form>
-
-      </section>
-
+  <main class="container-fluid"> 
+    <h1>CONTACTANOS</h1>
+      <h2>Su consulta no molesta</h2>  
+    <section>
+      <form class="row">
+        <div class="col-4 mb-3">
+          <label for="nombreimput" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombreimput" placeholder="Nombre">
+        </div >
+        <div class="col-4 mb-3">
+          <label for="apellidoimput" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="apellidoimput" placeholder="Apellido">
+        </div>
+        <div class="col-8 mb-3">
+          <label for="emailimput" class="form-label">Correo Electronico</label>
+          <input type="text" class="form-control" id="emailimput" placeholder="nombre@ejemplo.com">
+        </div>
+        <div class="col-8 mb-3">
+          <label for="textereaimput" class="form-label">Deja tu consulta</label>
+          <textarea class="form-control" placeholder="comente aqui" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-outline-dark col-8">ENVIAR CONSULTA</button>
+      </form>
+    </section>
+    <section id="gps" class="border2 productosFlex2">   
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1432.2345003071848!2d-64.21590029745144!3d-31.374215051587306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329902ee6d820f%3A0x9a2f5c02cc78b50d!2sBonita%20nails%20indumentaria%20femenina!5e0!3m2!1ses!2sar!4v1651270957520!5m2!1ses!2sar" width="350rem" height="200rem" style="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+    </section>
   </main>
-
- <footer>
-
-      <div>
-            <img src="../img/87390.png" class="instagram" alt=""> 
-            <p>Bonita.Nails</p>
-      </div>
-
-      <div>
-
-          <p>creado por Franco Junco</p>
-
-      </div>
-
-      <div>
-       <img src="../img/Logo-whatsapp.png" class="whatsapp" alt="">
-       <p>3517863955</p>
-      </div>
-
+  <footer  class="container-fluid navbar-expand-lg d-flex flex-wrap justify-content-between alaing-item-center py-3 my-4 border-top bg-p">
+    <p class="texto">Copyright 2022  - BONITA Indumentaria. Todos los derechos reservados.</p>
+    <ul class="nav col-md-4 justify-end">
+      <li class="nav-item"><a class="nav-link px-4" href="https://www.instagram.com/bonita_nails__/?hl=es"><img src="../img/87390.png" class="icono" alt="Instragram"></a></li>
+      <li class="nav-item"><a class="nav-link px-4" href="https://walink.co/246093"><img src="../img/Logo-whatsapp.png" class="icono" alt="Whatsapp"></a></li>
+    </ul>
   </footer>
 
 

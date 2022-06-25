@@ -13,36 +13,33 @@
     <title>Bonita.Tienda</title>
     <style>
         body{
-            background: url(./img/more-leaves.png);
-            
-            
-        }
+        background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%); background-blend-mode: normal, normal, screen, overlay, normal;
+      }
     </style>
 </head>
 <body> 
 
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light  ">
-      <img src="./img/logolocal2.png" alt="" class="imglogo">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"> Home
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <header class="bg-p">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a href="./index.html"><img src="./img/logolocal2.png" alt="logo" class="imglogo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="./secciones/contacto.html">Contacto</a>
-              <a class="nav-link active" href="./secciones/novedades.html">Novedades</a>
-              <a class="nav-link active" href="./secciones/productos.html">Productos</a>
-              <a class="nav-link active" href="./secciones/nosotros.html">Nosotros</a>
-            </div>
-          </div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-3">
+          <a class="nav-link active" href="#">Inicio</a>
+          <a class="nav-link active" aria-current="page" href="./secciones/contacto.html">Contacto</a>
+          <a class="nav-link active" href="./secciones/novedades.html">Novedades</a>
+          <a class="nav-link active" href="./secciones/productos.html">Productos</a>
+          <a class="nav-link active" href="./secciones/nosotros.html">Nosotros</a>
         </div>
-      </nav>
+      </div>
+    </nav>
  </header>
 
-  <main>  
+  <main class="container-fluid">  
 
       <section>
 
@@ -50,13 +47,13 @@
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
               <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                  <img src="./img/8321c725455c50f669936163c4b1a8b2 (1) (2).jpg" class="img3" alt="...">
+                  <img src="./img/8321c725455c50f669936163c4b1a8b2 (1) (2).jpg" class="imagen__carrusel" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                  <img src="./img/ropa 2.jpg" class="img3" alt="...">
+                  <img src="./img/ropa 2.jpg" class="imagen__carrusel" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/triangulo2 (1).jpg" class="img3" alt="...">
+                  <img src="./img/triangulo2 (1).jpg" class="imagen__carrusel" alt="...">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -70,39 +67,35 @@
             </div>
           </div>
 
-              <div>
-                <section id="servicios" class="border"> 
-                  <h2 class="cate"> Categorias Principales</h2>
-                  <button type="button" class="btn btn-outline-dark">TOP</button>
+          <div>
+          <section id="servicios" class="border2"> 
+                  <h1> CATEGORIAS PRINCIPALES</h1>
+              <button type="button" class="btn btn-outline-dark">TOP</button>
               <button type="button" class="btn btn-outline-dark">REMERAS</button>
-              <button type="button" class="btn btn-outline-dark">CAMPERAS</button>
               <button type="button" class="btn btn-outline-dark">JEANS</button>
-              <button type="button" class="btn btn-outline-dark">MOM</button>
-              <button type="button" class="btn btn-outline-dark">SHORTS</button>
               <button type="button" class="btn btn-outline-dark">POLLERAS</button>
-              <button type="button" class="btn btn-outline-dark">TEMPORADA PRIMAVERA/VERANO</button>
-                </section>
-              </div>
+         </section>
+         </div>
 
          </section>
         
 
       <section>
-        <aside class="border"> Ver Todos los Productos
+        <h2>Ver Todos los Productos</h2>
           <div class="cartas" style="width: 18rem;">
-            <img src="./img/pantalonverde.jpg" class="card-img-top" alt="...">
+            <img src="./img/pantalonverde.jpg" class="card-img-top imagen__ropa" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Conjunto Primaveral</h5>
+              <h3 class="card-title">Conjunto Primaveral</h3>
               <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">Consiguelo aca</a>
+              <a href="#" class="btn btn-outline-dark">Consiguelo aca</a>
             </div>
           </div>
           <div class="cartas" style="width: 18rem;">
-            <img src="./img/jeans25.jpg" class="card-img-top" alt="...">
+            <img src="./img/jeans25.jpg" class="card-img-top imagen__ropa" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Conjunto Invierno</h5>
+              <h3 class="card-title">Conjunto Invierno</h3>
               <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">Consiguelo aca</a>
+              <a href="#" class="btn btn-outline-dark">Consiguelo aca</a>
             </div>
           </div>
           
@@ -117,24 +110,12 @@
 
   </main>
 
-  <footer>
-
-      <div>
-            <img src="./img/87390.png" class="instagram" alt=""> 
-            <p>Bonita.Nails</p>
-      </div>
-
-      <div>
-
-          <p>creado por Franco Junco</p>
-
-      </div>
-
-      <div>
-       <img src="./img/Logo-whatsapp.png" class="whatsapp" alt="">
-       <p>3517863955</p>
-      </div>
-
+  <footer  class=" container-fluid navbar-expand-lg d-flex flex-wrap justify-content-between alaing-item-center py-3 my-4 border-top bg-p">
+    <p class="texto">Copyright 2022  - BONITA Indumentaria. Todos los derechos reservados.</p>
+    <ul class="nav col-md-4 justify-end">
+      <li class="nav-item"><a class="nav-link px-4" href="https://www.instagram.com/bonita_nails__/?hl=es"><img src="./img/87390.png" class="icono" alt="Instragram"></a></li>
+      <li class="nav-item"><a class="nav-link px-4" href="https://walink.co/246093"><img src="./img/Logo-whatsapp.png" class="icono" alt="Whatsapp"></a></li>
+    </ul>
   </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
