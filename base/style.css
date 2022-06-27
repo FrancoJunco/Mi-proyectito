@@ -1,29 +1,18 @@
-<<<<<<< HEAD
-=======
-/*estilos generales*/
->>>>>>> 72c585c192b340a28681f027121f8f6e1672aaad
 * {
   padding: 0;
   margin: 0;
 }
 
-<<<<<<< HEAD
 .bg-p {
   background: linear-gradient(288deg, #FFB6B9 0%, #FFB6B9 35%, #FAE3D9 calc(35% + 1px), #FAE3D9 45%, #BBDED6 calc(45% + 1px), #BBDED6 65%, #61C0BF calc(65% + 1px), #61C0BF 100%);
 }
 
-=======
->>>>>>> 72c585c192b340a28681f027121f8f6e1672aaad
 body {
   font-family: "Nunito Sans", sans-serif;
 }
 
 .destacado__titulo {
-<<<<<<< HEAD
   font-size: 50%;
-=======
-  font-size: 6rem;
->>>>>>> 72c585c192b340a28681f027121f8f6e1672aaad
 }
 
 h1 {
@@ -70,13 +59,6 @@ h1 {
   width: 20%;
 }
 
-<<<<<<< HEAD
-=======
-.bg-p {
-  background-color: rgb(245, 182, 137);
-}
-
->>>>>>> 72c585c192b340a28681f027121f8f6e1672aaad
 .icono {
   width: 5vw;
   height: 10vh;
