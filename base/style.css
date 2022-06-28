@@ -59,6 +59,10 @@ h1 {
   width: 20%;
 }
 
+.gps {
+  margin: 10px;
+}
+
 .icono {
   width: 5vw;
   height: 10vh;
