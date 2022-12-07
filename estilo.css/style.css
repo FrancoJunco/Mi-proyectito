@@ -119,3 +119,12 @@ h1 {
     height: 25vh;
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+/*css de JS*/
+
+#appBg{
+  height: 420px;
+  width: 300px;
+  background-color: red;
+}
